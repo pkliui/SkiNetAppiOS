@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@react-native-community/slider": "4.2.3",
-    "@shopify/react-native-skia": "0.1.172",
+    "@shopify/react-native-skia": "0.1.124",
     "base64-js": "^1.5.1",
     "expo": "~46.0.0",
     "expo-asset": "~8.6.3",
