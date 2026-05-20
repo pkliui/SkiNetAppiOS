@@ -32,9 +32,7 @@
         {
           "photosPermission": "Allow SkiNetApp to save segmentation results."
         }
-      ],
-      "expo-asset",
-      "onnxruntime-react-native"
+      ]
     ],
     "extra": {
       "eas": {
