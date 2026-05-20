@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "SkiNetApp",
+    "slug": "skinetapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.skinetapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take photos of skin lesions for segmentation",
+        "NSPhotoLibraryUsageDescription": "Select skin lesion images for segmentation",
+        "NSPhotoLibraryAddUsageDescription": "Save segmentation results to your photo library"
+      }
+    },
+    "android": {
+      "package": "com.yourname.skinetapp",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-image-picker",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow SkiNetApp to save segmentation results."
+        }
+      ],
+      "expo-asset",
+      "onnxruntime-react-native"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9e6ea73b-1f24-4487-9e0c-f29d797129b2"
+      }
+    },
+    "owner": "pkliui"
+  }
+}
